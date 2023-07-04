@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal</title>
+    <title>Student's Portal by Adenilson</title>
     <link rel="stylesheet" href="./public/cs/style.css">
+    <link rel="stylesheet" href="../assets/fonts/Sf-pro-regular.OTF">
+    <link rel="icon" href="./adj-icon.png" type="image/png">
 </head>
 <body>
     <header>
-        <h1>Student Portal</h1>
+        <div id="adenilson-img">
+         <img src="./public/assets/images/english-w-adenilson.png">
+        </div>
     </header>
     <main>
+        <h1>Student's Portal</h1>
         <section id="home" class="page">
-            <h2>Welcome, Student!</h2>
+            <h2>Hey there! Check out your info below</h2>
             <form id="searchForm">
                 <label for="studentName">Enter your name:</label>
                 <input type="text" id="studentName" required>
@@ -20,9 +25,14 @@
             </form>
             <div id="studentInfo"></div>
         </section>
+        <div id="caixa-qr-code-container">
+            <img id="caixa-qr-code" src="./public/assets/images/caixa-qr-code.jpg">
+            <h4 class="h4">Chave pix: aaadjrbr@gmail.com</h4>
+            <h5 class="h5">*Make sure to send the receipt on my WhatsApp.</h5>
+          </div>
     </main>
     <footer>
-        <p>&copy; 2023 Student Portal</p>
+        <p>Created by Adenilson Ribeiro. &copy; All rights reserved. Student's Portal 2023.</p>
     </footer>
     <script src="./public/js/script.js"></script>
 </body>

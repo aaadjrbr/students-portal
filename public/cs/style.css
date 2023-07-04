@@ -1,59 +1,153 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
+    /* Your existing styles for body */
+    font-family: 'SfProRegular', Helvetica;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #000000;
+    background-image: url("../assets/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
-}
-
-main {
+    min-height: 30vh;
+  }
+  
+  main {
+    flex: 1;
     padding: 20px;
-}
-
-.page {
+  }
+  
+  .page {
     display: none;
-}
-
-#home {
+  }
+  
+  #home {
     display: block;
-}
-
-form {
+  }
+  
+  form {
     margin-bottom: 20px;
-}
-
-label {
+  }
+  
+  label {
     display: block;
+    font-family: 'SfProRegular', Helvetica;
+    font-size: 1rem;
     margin-bottom: 10px;
-}
-
-input[type="text"] {
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
     padding: 5px;
-    width: 200px;
-}
-
-button {
+    font-family: 'SfProRegular', Helvetica;
+    font-size: 0.9rem;
+    width: auto;
+    border-radius: 10px;
+    border-color: var(--cas-theme-primary, #000000);
+  }
+  
+  button {
     padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
+    font-size: 1rem;
+    background-color:#000000;
+    border-radius: 10px;
+    font-family: 'SfProRegular', Helvetica;
+    color: #ffffff;
     border: none;
     cursor: pointer;
-}
-
-#studentInfo {
+  }
+  
+  #studentInfo {
     margin-top: 20px;
-    border: 1px solid #333;
+    font-size: 1rem;
+    font-family: 'SfProRegular', Helvetica;
+    border-radius: 30px;
+    color: rgba(0, 0, 0); /* Adjust the text opacity as needed */
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background opacity as needed */
     padding: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0);
+    font-family: 'SfProRegular', Helvetica;
+    font-size: 0.8rem;
+    color: #ffffff;
+    padding: 5px;
     text-align: center;
-}
+    border-radius: 10px;
+  }
+  
+  #caixa-qr-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  #caixa-qr-code {
+    height: 160px;
+    border-radius: 20px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    text-align: center;
+    font-family: 'SfProRegular', Helvetica;
+    font-weight: bold;
+    margin-bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }  
+
+  h5 {
+    text-align: center;
+    font-family: 'SfProRegular', Helvetica;
+    font-weight: bold;
+    margin-top: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #adenilson-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: auto;
+  }
+  
+  #adenilson-img img {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: contain;
+  }
+  
+  @font-face {
+    font-family: 'SfProRegular';
+    src: url("../assets/fonts/Sf-pro-regular.OTF") format('truetype');
+  }
+
+  .rescheduled {
+    color: red;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px red;
+    }
+    100% {
+      text-shadow: 0 0 10px red;
+    }
+  }
