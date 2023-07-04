@@ -26,7 +26,7 @@ const students = [
     homeworkText: "English presentation due on 8th July",
     homeworkLinkText: "https://adenilsonstudentsportal.netlify.app/",
     fixedTime: "Friday and Thursday from 4:00 PM to 5:30 PM",
-    rescheduledClass: "No resechedule class",
+    rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due"
   },
   // Add more student objects here as needed
