@@ -1,7 +1,7 @@
 // Define an array of student objects
 const students = [
   {
-    name: "John Doe",
+    name: "Adenilson Ribeiro",
     number: "S1234567",
     paymentStatus: "Paid",
     homework: "Math assignment due on 5th July",
