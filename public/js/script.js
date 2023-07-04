@@ -5,7 +5,6 @@ const students = [
     paymentStatus: "Paid",
     homeworkText: "Math assignment due on 5th July",
     homeworkLinkText: "View Assignment",
-    nextClass: "Science class on 7th July at 10:00 AM",
     fixedTime: "Monday and Friday from 5:00 PM to 6:00 PM",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due"
@@ -16,10 +15,19 @@ const students = [
     paymentStatus: "Not Paid",
     homeworkText: "English essay due on 6th July",
     homeworkLinkText: "View Assignment",
-    nextClass: "History class on 8th July at 9:30 AM",
     fixedTime: "Tuesday and Thursday from 4:00 PM to 5:30 PM",
     rescheduledClass: "Math class on 9th July at 11:00 AM",
     paymentDue: "Payment due on 10th July"
+  },
+  {
+    name: "Adenilson Ribeiro de Moura",
+    number: "S2348678",
+    paymentStatus: "Paid",
+    homeworkText: "English presentation due on 8th July",
+    homeworkLinkText: "https://adenilsonstudentsportal.netlify.app/",
+    fixedTime: "Friday and Thursday from 4:00 PM to 5:30 PM",
+    rescheduledClass: "No resechedule class",
+    paymentDue: "No payment due"
   },
   // Add more student objects here as needed
 ];
@@ -60,7 +68,6 @@ searchForm.addEventListener('submit', e => {
           <p><strong>Number:</strong> ${student.number}</p>
           <p><strong>Payment Status:</strong> <span style="color: ${textColor}">${student.paymentStatus}</span></p>
           <p><strong>Homework:</strong> ${student.homeworkText} <a href="${getHomeworkLink(student)}">${student.homeworkLinkText}</a></p>
-          <p><strong>Next Class:</strong> ${student.nextClass}</p>
           <p><strong>Fixed Time:</strong> ${student.fixedTime}</p>
           <p class="${hasRescheduledClass ? 'rescheduled' : ''}"><strong>Rescheduled Class:</strong> ${student.rescheduledClass}</p>
           <p><strong>Payment Due:</strong> ${student.paymentDue}</p>
