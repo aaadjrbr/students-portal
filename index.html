@@ -18,7 +18,7 @@
             </ul>
           </div>
         <div id="adenilson-img">
-         <img src="./public/assets/images/english-w-adenilson.png">
+         <img src="./public/assets/images/english-w-adenilson.png" draggable="false" alt="Non-draggable image">
         </div>
     </header>
     <main>
@@ -38,7 +38,7 @@
               <div id="studentInfo"></div>
         </section>
         <div id="caixa-qr-code-container">
-            <img id="caixa-qr-code" src="./public/assets/images/caixa-qr-code.jpg">
+            <img id="caixa-qr-code" src="./public/assets/images/caixa-qr-code.jpg" draggable="false" alt="Non-draggable image">
             <h4 class="h4">Chave pix: aaadjrbr@gmail.com</h4>
             <h5>*Make sure to send the receipt on my WhatsApp.</h5>
           </div>
@@ -46,6 +46,10 @@
     <footer>
         <p>Created by Adenilson Ribeiro. &copy; All rights reserved. Student's Portal 2023.</p>
     </footer>
+
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>    
 
     <script src="./public/js/script.js"></script>
 </body>
