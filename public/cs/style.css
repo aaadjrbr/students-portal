@@ -17,9 +17,9 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
   margin-bottom: 15px;
   border-radius: 20px;
-  padding: 25px;
+  padding: 16px;
   text-align: center;
-  min-height: 30vh;
+  min-height: 15vh;
 }
 
 main {
@@ -46,8 +46,9 @@ label {
   display: block;
   font-family: 'Oswald', Helvetica;
   font-size: 1rem;
-  border-radius: 40px;
-  margin-bottom: 10px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
@@ -61,7 +62,8 @@ input[type="text"] {
 }
 
 button {
-  padding: 5px 10px;
+  padding: 5px 15px;
+  margin-top: 2px;
   font-size: 1rem;
   background-color:#000000;
   border-radius: 10px;
@@ -139,7 +141,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 140px;
   width: auto;
 }
 
