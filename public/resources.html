@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources Page</title>
+  <link rel="icon" href="../adj-icon.png" type="image/png">
+  <link href="../assets/fonts/Sf-pro-regular.OTF" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./cs/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+</head>
+
+<body class="news">
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="../index.html">Home</a></li>
+        <li class="resources"><a class="active" href="./resources.html" data-page="resources">Resources</a></li>
+      </ul>
+    </div>
+    <div id="adenilson-img">
+      <img src="../public/assets/images/english-w-adenilson.png">
+    </div>
+  </header>
+
+  <main id="resources">
+    <h1>Resources</h1>
+    
+    <form id="searchForm">
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" required>
+      <div id="birthdayBox">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" required>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+    
+  <div id="studentInfo">
+    <div id="contentToHide" style="display: none;">
+      <!-- Add the content here that should be hidden -->
+      <h3>Hidden Content</h3>
+      <p>This content will only be visible if the user adds their birthday.</p>
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <p>Created by Adenilson Ribeiro. &copy; All rights reserved. Student's Portal 2023.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contentToHide = document.getElementById('contentToHide');
+      const searchForm = document.getElementById('searchForm');
+      
+      searchForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const birthdayInput = document.getElementById('birthday');
+        const birthday = birthdayInput.value;
+        
+        if (birthday) {
+          contentToHide.style.display = 'block';
+        } else {
+          contentToHide.style.display = 'none';
+        }
+      });
+    });
+    </script>
+</body>
+</html>

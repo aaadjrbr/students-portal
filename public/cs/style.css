@@ -1,153 +1,257 @@
 body {
-    /* Your existing styles for body */
-    font-family: 'SfProRegular', Helvetica;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #000000;
-    background-image: url("../assets/images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  /* Your existing styles for body */
+  font-family: 'Oswald', Helvetica;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #000000;
+  background-image: url("../assets/images/background.jpg");
+  background-color: rgba(255, 255, 255, 0.10);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  min-height: 30vh;
+}
+
+main {
+  flex: 1;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page {
+  display: none;
+}
+
+#home {
+  display: block;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-family: 'Oswald', Helvetica;
+  font-size: 1rem;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 5px;
+  font-family: 'Oswald', Helvetica;
+  font-size: 0.9rem;
+  width: auto;
+  border-radius: 10px;
+  border-color: var(--cas-theme-primary, #000000);
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color:#000000;
+  border-radius: 10px;
+  font-family: 'Oswald', Helvetica;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+#studentInfo {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-family: 'SfProRegular', Helvetica;
+  border-radius: 30px;
+  color: rgba(0, 0, 0); /* Adjust the text opacity as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the background opacity as needed */
+  padding: 10px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0);
+  font-family: 'Oswald', Helvetica;
+  font-size: 0.9rem;
+  color: #ffffff;
+  padding: 4px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#caixa-qr-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#caixa-qr-code {
+  height: 160px;
+  border-radius: 20px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Oswald', Helvetica;
+  color:#000000;
+  padding: 2px;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
+  color:#000000;
+  font-family: 'Oswald', Helvetica;
+  font-weight: bold;
+  margin-bottom: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}  
+
+h5 {
+  text-align: center;
+  color:#000000;
+  font-family: 'Oswald', Helvetica;
+  font-weight: bold;
+  margin-top: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#adenilson-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: auto;
+}
+
+#adenilson-img img {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+@font-face {
+  font-family: 'SfProRegular';
+  src: url("../assets/fonts/Sf-pro-regular.OTF") format('truetype');
+}
+
+.rescheduled {
+  color: red;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px red;
   }
-  
-  header {
-    background-color: rgba(255, 255, 255, 0.10);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    min-height: 30vh;
+  100% {
+    text-shadow: 0 0 10px red;
   }
-  
-  main {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .page {
-    display: none;
-  }
-  
-  #home {
-    display: block;
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-family: 'SfProRegular', Helvetica;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  input[type="text"] {
-    padding: 5px;
-    font-family: 'SfProRegular', Helvetica;
-    font-size: 0.9rem;
-    width: auto;
-    border-radius: 10px;
-    border-color: var(--cas-theme-primary, #000000);
-  }
-  
-  button {
-    padding: 5px 10px;
-    font-size: 1rem;
-    background-color:#000000;
-    border-radius: 10px;
-    font-family: 'SfProRegular', Helvetica;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #studentInfo {
-    margin-top: 20px;
-    font-size: 1rem;
-    font-family: 'SfProRegular', Helvetica;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Align the menu items horizontally to the center */
+}
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-size: 1em; /* Adjust the font size to make the menu smaller */
+  line-height: 30px; /* Adjust the line height to make the menu smaller */
+  height: 30px; /* Adjust the height to make the menu smaller */
+  border-radius: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px;
+  transition: .3s background-color;
+  border-radius: 20px;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.nav a.active {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 2px;
+  color: black;
+  border-radius: 20px;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 100px; /* Adjust the width to make the menu smaller */
+    border-bottom: none;
     border-radius: 30px;
-    color: rgba(0, 0, 0); /* Adjust the text opacity as needed */
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background opacity as needed */
-    padding: 10px;
-  }
-  
-  footer {
-    background-color: rgba(0, 0, 0);
-    font-family: 'SfProRegular', Helvetica;
-    font-size: 0.8rem;
-    color: #ffffff;
-    padding: 5px;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  #caixa-qr-code-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  
-  #caixa-qr-code {
-    height: 160px;
-    border-radius: 20px;
-    width: auto;
-    margin-bottom: 10px;
-  }
-  
-  h4 {
-    text-align: center;
-    font-family: 'SfProRegular', Helvetica;
-    font-weight: bold;
-    margin-bottom: 2px;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    border-radius: 10px;
-  }  
-
-  h5 {
-    text-align: center;
-    font-family: 'SfProRegular', Helvetica;
-    font-weight: bold;
-    margin-top: 4px;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
-  #adenilson-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: auto;
-  }
-  
-  #adenilson-img img {
-    max-height: 90%;
-    max-width: 90%;
-    object-fit: contain;
-  }
-  
-  @font-face {
-    font-family: 'SfProRegular';
-    src: url("../assets/fonts/Sf-pro-regular.OTF") format('truetype');
+    height: 40px; /* Adjust the height to make the menu smaller */
+    line-height: 40px; /* Adjust the line height to make the menu smaller */
+    font-size: 1.2em; /* Adjust the font size to make the menu smaller */
   }
 
-  .rescheduled {
-    color: red;
-    animation: glow 1s ease-in-out infinite alternate;
+  .nav ul {
+    overflow: visible;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
-  
-  @keyframes glow {
-    0% {
-      text-shadow: 0 0 5px red;
-    }
-    100% {
-      text-shadow: 0 0 10px red;
-    }
+
+  .nav {
+    border-radius: 2px;
+    padding: 10px;
+    height: 40px; /* Adjust the height to make the menu smaller */
+    width: auto;
+    display: flex;
+    justify-content: center; /* Align the menu horizontally to the center */
   }
+}
+
+#birthdayBox {
+  margin-bottom: 20px;
+}
+
+#birthdayBox label {
+  font-weight: bold;
+}
+
+#birthdayBox input[type="date"] {
+  padding: 5px;
+  font-family: 'Oswald', Helvetica;
+  font-size: 0.9rem;
+  width: auto;
+  border-radius: 10px;
+  border-color: var(--cas-theme-primary, #000000);
+}

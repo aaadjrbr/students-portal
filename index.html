@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="./public/cs/style.css">
     <link rel="stylesheet" href="../assets/fonts/Sf-pro-regular.OTF">
     <link rel="icon" href="./adj-icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="news">
     <header>
+        <div class="nav">
+            <ul>
+              <li class="home"><a class="active" href="./index.html">Home</a></li>
+              <li class="rescources"><a href="./public/resources.html">Resources</a></li>
+            </ul>
+          </div>
         <div id="adenilson-img">
          <img src="./public/assets/images/english-w-adenilson.png">
         </div>
@@ -19,21 +26,27 @@
         <section id="home" class="page">
             <h2>Hey there! Check out your info below</h2>
             <form id="searchForm">
-                <label for="studentName">Enter your name:</label>
+                <label for="studentName">Student Name:</label>
                 <input type="text" id="studentName" required>
+                  <div id="birthdayBox">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" required>
+                  </div>
                 <button type="submit">Search</button>
-            </form>
-            <div id="studentInfo"></div>
+              </form>
+              
+              <div id="studentInfo"></div>
         </section>
         <div id="caixa-qr-code-container">
             <img id="caixa-qr-code" src="./public/assets/images/caixa-qr-code.jpg">
             <h4 class="h4">Chave pix: aaadjrbr@gmail.com</h4>
-            <h5 class="h5">*Make sure to send the receipt on my WhatsApp.</h5>
+            <h5>*Make sure to send the receipt on my WhatsApp.</h5>
           </div>
     </main>
     <footer>
         <p>Created by Adenilson Ribeiro. &copy; All rights reserved. Student's Portal 2023.</p>
     </footer>
+
     <script src="./public/js/script.js"></script>
 </body>
 </html>
