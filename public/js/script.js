@@ -66,7 +66,7 @@ searchForm.addEventListener('submit', e => {
 
         // Check if the payment status is "Not Paid" and display an alert message
         if (student.paymentStatus === 'Not Paid') {
-          alert(`Attention ${student.name}, your payment is overdue.`);
+          alert(`Atenção ${student.name}, seu pagamento está vencido.`);
         }
 
         studentInfo.innerHTML += `

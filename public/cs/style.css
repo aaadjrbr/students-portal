@@ -1,5 +1,4 @@
 body {
-  /* Your existing styles for body */
   font-family: 'Oswald', Helvetica;
   font-size: 1.1rem;
   display: flex;
@@ -14,7 +13,7 @@ body {
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 15px;
   border-radius: 20px;
   padding: 16px;
@@ -27,7 +26,7 @@ main {
   padding: 25px;
   border-radius: 20px;
   margin-bottom: 15px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .page {
@@ -53,8 +52,9 @@ label {
 }
 
 input[type="text"] {
-  padding: 5px;
-  font-family: 'Oswald', Helvetica;
+  padding: 10px;
+  font-family: 'SfProRegular', Helvetica;
+  color: grey;
   font-size: 0.9rem;
   width: auto;
   border-radius: 10px;
@@ -79,7 +79,7 @@ button {
   font-family: 'SfProRegular', Helvetica;
   border-radius: 30px;
   color: rgba(0, 0, 0); /* Adjust the text opacity as needed */
-  background-color: rgba(255, 255, 255, 0.7); /* Adjust the background opacity as needed */
+  background-color: rgba(255, 255, 255); /* Adjust the background opacity as needed */
   padding: 10px;
 }
 
@@ -98,20 +98,34 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10px;
+  padding: 30px;
 }
 
 #caixa-qr-code {
   height: 160px;
   border-radius: 20px;
   width: auto;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
-h2 {
+h1 {
   font-family: 'Oswald', Helvetica;
+  font-size: 2.2rem;
+  margin-top: auto;
+  margin-bottom: 5px;
   color:#000000;
   padding: 2px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  color:#000000;
+  padding: 1px;
   font-weight: bold;
 }
 
@@ -121,7 +135,7 @@ h4 {
   font-family: 'Oswald', Helvetica;
   font-weight: bold;
   margin-bottom: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255);
   padding: 10px;
   border-radius: 10px;
 }  
@@ -132,7 +146,7 @@ h5 {
   font-family: 'Oswald', Helvetica;
   font-weight: bold;
   margin-top: 4px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255);
   padding: 10px;
   border-radius: 10px;
 }
@@ -184,7 +198,7 @@ h5 {
 .nav li {
   font-family: 'Oswald', sans-serif;
   color: black;
-  font-size: 1em; /* Adjust the font size to make the menu smaller */
+  font-size: 1rem; /* Adjust the font size to make the menu smaller */
   line-height: 30px; /* Adjust the line height to make the menu smaller */
   height: 30px; /* Adjust the height to make the menu smaller */
   border-radius: 30px;
@@ -200,14 +214,15 @@ h5 {
 }
 
 .nav a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0);
+  color: white;
   border-radius: 20px;
   margin-left: 2px;
   margin-right: 2px;
 }
 
 .nav a.active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255);
   margin-left: 2px;
   color: black;
   border-radius: 20px;
@@ -242,7 +257,7 @@ h5 {
 }
 
 #birthdayBox {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #birthdayBox label {
@@ -250,10 +265,23 @@ h5 {
 }
 
 #birthdayBox input[type="date"] {
-  padding: 5px;
-  font-family: 'Oswald', Helvetica;
+  padding: 10px;
+  font-family: 'SfProRegular', Helvetica;
+  color: grey;
   font-size: 0.9rem;
   width: auto;
   border-radius: 10px;
   border-color: var(--cas-theme-primary, #000000);
+}
+
+/* Coming soon */
+
+#coming-soon-img {
+  height: 200px;
+  width: auto;
+}
+
+#whatsapp-img {
+  height: 40px;
+  width: auto;
 }
