@@ -21,6 +21,17 @@ const students = [
     paymentDue: "Payment due on 10th July",
     birthday: "2001-05-23" // Example birthday date, replace with actual birthday
   },
+  {
+    name: "Carolina Assis Rodrigues",
+    number: "S24878",
+    paymentStatus: "Paid",
+    homeworkText: "English presentation due on 8th July",
+    homeworkLinkText: "",
+    fixedTime: "Friday and Saturday from 4:00 PM to 5:30 PM",
+    rescheduledClass: "No rescheduled class",
+    paymentDue: "Payment due on 10th July",
+    birthday: "1997-04-08" // Example birthday date, replace with actual birthday
+  },
   // Add more student objects here as needed
 ];
 
