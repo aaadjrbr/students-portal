@@ -1,17 +1,15 @@
 body {
   display: flex;
-  font-family: 'Oswald', Helvetica;
   flex-direction: column;
   min-height: 100vh;
   background-image: url("../assets/images/background.jpg");
-  background-color: rgba(255, 255, 255, 0.10);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 15px;
   border-radius: 20px;
   padding: 16px;
@@ -24,7 +22,7 @@ main {
   padding: 25px;
   border-radius: 20px;
   margin-bottom: 15px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .page {
@@ -41,7 +39,7 @@ form {
 
 label {
   display: block;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   border-radius: 30px;
   margin-top: 10px;
@@ -51,7 +49,7 @@ label {
 
 input[type="text"] {
   padding: 10px;
-  font-family: 'SfProRegular', Helvetica;
+  font-family: 'SfProRegular', sans-serif;
   color: grey;
   font-size: 0.9rem;
   width: auto;
@@ -65,7 +63,7 @@ button {
   font-size: 1rem;
   background-color:#000000;
   border-radius: 10px;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'Oswald', sans-serif;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -74,7 +72,7 @@ button {
 #studentInfo {
   margin-top: 20px;
   font-size: 1rem;
-  font-family: 'SfProRegular', Helvetica;
+  font-family: 'SfProRegular', sans-serif;
   border-radius: 30px;
   color: rgba(0, 0, 0); /* Adjust the text opacity as needed */
   background-color: rgba(255, 255, 255); /* Adjust the background opacity as needed */
@@ -83,8 +81,8 @@ button {
 
 footer {
   background-color: rgba(0, 0, 0);
-  font-family: 'Oswald', Helvetica;
-  font-size: 0.9rem;
+  font-family: 'Geologica', sans-serif;
+  font-size: 0.8rem;
   color: #ffffff;
   padding: 4px;
   text-align: center;
@@ -108,7 +106,7 @@ footer {
 }
 
 h1 {
-  font-family: 'Oswald', Helvetica;
+  font-family: 'Geologica', sans-serif;
   font-size: 2.2rem;
   margin-top: auto;
   margin-bottom: -5px;
@@ -118,7 +116,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Oswald', Helvetica;
+  font-family: 'Geologica', sans-serif;
   font-size: 1.3rem;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -130,7 +128,8 @@ h2 {
 h4 {
   text-align: center;
   color:#000000;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'Geologica', sans-serif;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 2px;
   background-color: rgba(255, 255, 255);
@@ -141,7 +140,8 @@ h4 {
 h5 {
   text-align: center;
   color:#000000;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'Geologica', sans-serif;
+  font-size: 0.8em;
   font-weight: bold;
   margin-top: 4px;
   background-color: rgba(255, 255, 255);
@@ -194,9 +194,9 @@ h5 {
 }
 
 .nav li {
-  font-family: 'Oswald', Helvetica;
+  font-family: 'Oswald', sans-serif;
   color: black;
-  font-size: 1rem; /* Adjust the font size to make the menu smaller */
+  font-size: 0.9rem; /* Adjust the font size to make the menu smaller */
   line-height: 30px; /* Adjust the line height to make the menu smaller */
   height: 30px; /* Adjust the height to make the menu smaller */
   border-radius: 30px;
@@ -264,7 +264,7 @@ h5 {
 
 #birthdayBox input[type="date"] {
   padding: 10px;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'SfProRegular', sans-serif;
   color: grey;
   font-size: 0.9rem;
   width: auto;
@@ -293,5 +293,4 @@ em {
 /* <sub> makes the text grey and italic */
 sub {
   color: rgb(88, 88, 88);
-  font-style: italic;
 }
