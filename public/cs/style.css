@@ -1,5 +1,6 @@
 body {
   display: flex;
+  font-family: 'Oswald', Helvetica;
   flex-direction: column;
   min-height: 100vh;
   background-image: url("../assets/images/background.jpg");
@@ -40,7 +41,7 @@ form {
 
 label {
   display: block;
-  font-family: 'NeueHelvetica', Arial;
+  font-family: 'Oswald', Helvetica;
   font-size: 1rem;
   border-radius: 30px;
   margin-top: 10px;
@@ -50,7 +51,7 @@ label {
 
 input[type="text"] {
   padding: 10px;
-  font-family: 'NeueHelvetica', Arial;
+  font-family: 'SfProRegular', Helvetica;
   color: grey;
   font-size: 0.9rem;
   width: auto;
@@ -64,7 +65,7 @@ button {
   font-size: 1rem;
   background-color:#000000;
   border-radius: 10px;
-  font-family: 'NeueHelvetica', Arial;
+  font-family: 'Oswald', Helvetica;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -82,7 +83,7 @@ button {
 
 footer {
   background-color: rgba(0, 0, 0);
-  font-family: 'NeueHelvetica', Arial;
+  font-family: 'Oswald', Helvetica;
   font-size: 0.9rem;
   color: #ffffff;
   padding: 4px;
@@ -117,20 +118,19 @@ h1 {
 }
 
 h2 {
-  font-family: 'NeueHelvetica', Arial;
-  font-weight: bold;
+  font-family: 'Oswald', Helvetica;
   font-size: 1.3rem;
   margin-top: 0px;
   margin-bottom: 20px;
   color:#000000;
   padding: 5px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 h4 {
   text-align: center;
   color:#000000;
-  font-family: 'NeueHelvetica', Arial;
+  font-family: 'Oswald', Helvetica;
   font-weight: bold;
   margin-bottom: 2px;
   background-color: rgba(255, 255, 255);
@@ -141,7 +141,7 @@ h4 {
 h5 {
   text-align: center;
   color:#000000;
-  font-family: 'NeueHelvetica', Arial;
+  font-family: 'Oswald', Helvetica;
   font-weight: bold;
   margin-top: 4px;
   background-color: rgba(255, 255, 255);
@@ -161,11 +161,6 @@ h5 {
   max-height: 90%;
   max-width: 90%;
   object-fit: contain;
-}
-
-@font-face {
-  font-family: 'NeueHelvetica';
-  src: url("../assets/fonts/Helvetica-Neue-67-Medium-Condensed.otf") format('opentype');
 }
 
 @font-face {
