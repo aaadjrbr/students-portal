@@ -124,7 +124,7 @@ h2 {
   margin-bottom: 20px;
   color:#000000;
   padding: 5px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h4 {
@@ -194,7 +194,7 @@ h5 {
 }
 
 .nav li {
-  font-family: 'NeueHelvetica', Arial;
+  font-family: 'Oswald', Helvetica;
   color: black;
   font-size: 1rem; /* Adjust the font size to make the menu smaller */
   line-height: 30px; /* Adjust the line height to make the menu smaller */
@@ -264,7 +264,7 @@ h5 {
 
 #birthdayBox input[type="date"] {
   padding: 10px;
-  font-family: 'NeueHelvetica', Arial;
+  font-family: 'Oswald', Helvetica;
   color: grey;
   font-size: 0.9rem;
   width: auto;
