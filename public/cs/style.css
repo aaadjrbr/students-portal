@@ -1,10 +1,7 @@
 body {
-  font-family: 'Oswald', Helvetica;
-  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: #000000;
   background-image: url("../assets/images/background.jpg");
   background-color: rgba(255, 255, 255, 0.10);
   background-size: cover;
@@ -43,7 +40,7 @@ form {
 
 label {
   display: block;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'NeueHelvetica', Arial;
   font-size: 1rem;
   border-radius: 30px;
   margin-top: 10px;
@@ -53,7 +50,7 @@ label {
 
 input[type="text"] {
   padding: 10px;
-  font-family: 'SfProRegular', Helvetica;
+  font-family: 'NeueHelvetica', Arial;
   color: grey;
   font-size: 0.9rem;
   width: auto;
@@ -67,7 +64,7 @@ button {
   font-size: 1rem;
   background-color:#000000;
   border-radius: 10px;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'NeueHelvetica', Arial;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -85,7 +82,7 @@ button {
 
 footer {
   background-color: rgba(0, 0, 0);
-  font-family: 'Oswald', Helvetica;
+  font-family: 'NeueHelvetica', Arial;
   font-size: 0.9rem;
   color: #ffffff;
   padding: 4px;
@@ -102,7 +99,7 @@ footer {
 }
 
 #caixa-qr-code {
-  height: 160px;
+  height: 150px;
   border-radius: 20px;
   width: auto;
   margin-top: 5px;
@@ -113,26 +110,27 @@ h1 {
   font-family: 'Oswald', Helvetica;
   font-size: 2.2rem;
   margin-top: auto;
-  margin-bottom: 5px;
+  margin-bottom: -5px;
   color:#000000;
   padding: 2px;
   font-weight: bold;
 }
 
 h2 {
-  font-family: 'Lora', serif;
-  font-size: 1em;
-  margin-top: auto;
-  margin-bottom: auto;
+  font-family: 'NeueHelvetica', Arial;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 0px;
+  margin-bottom: 20px;
   color:#000000;
-  padding: 1px;
+  padding: 5px;
   font-weight: bold;
 }
 
 h4 {
   text-align: center;
   color:#000000;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'NeueHelvetica', Arial;
   font-weight: bold;
   margin-bottom: 2px;
   background-color: rgba(255, 255, 255);
@@ -143,7 +141,7 @@ h4 {
 h5 {
   text-align: center;
   color:#000000;
-  font-family: 'Oswald', Helvetica;
+  font-family: 'NeueHelvetica', Arial;
   font-weight: bold;
   margin-top: 4px;
   background-color: rgba(255, 255, 255);
@@ -166,8 +164,13 @@ h5 {
 }
 
 @font-face {
+  font-family: 'NeueHelvetica';
+  src: url("../assets/fonts/Helvetica-Neue-67-Medium-Condensed.otf") format('truetype');
+}
+
+@font-face {
   font-family: 'SfProRegular';
-  src: url("../assets/fonts/Sf-pro-regular.OTF") format('truetype');
+  src: url("../assets/fonts/Sf-pro-regular.ttf") format('truetype');
 }
 
 .rescheduled {
@@ -196,7 +199,7 @@ h5 {
 }
 
 .nav li {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'NeueHelvetica', Arial;
   color: black;
   font-size: 1rem; /* Adjust the font size to make the menu smaller */
   line-height: 30px; /* Adjust the line height to make the menu smaller */
@@ -266,7 +269,7 @@ h5 {
 
 #birthdayBox input[type="date"] {
   padding: 10px;
-  font-family: 'SfProRegular', Helvetica;
+  font-family: 'NeueHelvetica', Arial;
   color: grey;
   font-size: 0.9rem;
   width: auto;
@@ -284,4 +287,16 @@ h5 {
 #whatsapp-img {
   height: 40px;
   width: auto;
+}
+
+/* <em> makes the text italic and red */
+em {
+  font-style: italic;
+  color: red;
+}
+
+/* <sub> makes the text grey and italic */
+sub {
+  color: rgb(88, 88, 88);
+  font-style: italic;
 }

@@ -1,16 +1,5 @@
 const students = [
   {
-    name: "John Doe",
-    number: "S1234567",
-    paymentStatus: "Paid",
-    homeworkText: "Math assignment due on 5th July",
-    homeworkLinkText: "View Assignment",
-    fixedTime: "Monday and Friday from 5:00 PM to 6:00 PM",
-    rescheduledClass: "No rescheduled class",
-    paymentDue: "No payment due",
-    birthday: "1998-07-15" // Example birthday date, replace with actual birthday
-  },
-  {
     name: "Jane Smith",
     number: "S2345678",
     paymentStatus: "Not Paid",
@@ -22,18 +11,83 @@ const students = [
     birthday: "2001-05-23" // Example birthday date, replace with actual birthday
   },
   {
-    name: "Carolina Assis Rodrigues",
-    number: "S24878",
+    name: "Gabriel Henrique Fernandes Cardoso", //GABRIEL 1
+    number: "-",
     paymentStatus: "Paid",
-    homeworkText: "English presentation due on 8th July",
+    homeworkText: "",
     homeworkLinkText: "",
-    fixedTime: "Friday and Saturday from 4:00 PM to 5:30 PM",
+    fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
     rescheduledClass: "No rescheduled class",
-    paymentDue: "Payment due on 10th July",
-    birthday: "1997-04-08" // Example birthday date, replace with actual birthday
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 30th",
+    birthday: "2003-01-20" // Example birthday date, replace with actual birthday
+  },
+  {
+    name: "Adriano Alvim Rocha", //ADRIANO 2
+    number: "-",
+    paymentStatus: "Paid",
+    homeworkText: "",
+    homeworkLinkText: "",
+    fixedTime: "Monday (7:30PM to 8:30PM) and Thursday (7:30PM to 8:30PM)",
+    rescheduledClass: "Rescheduled class on Friday 7th",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 4th",
+    birthday: "1995-07-29" // Example birthday date, replace with actual birthday
+  },
+  {
+    name: "Thiago Monteiro da Rocha", //THIAGO 3
+    number: "-",
+    paymentStatus: "Paid",
+    homeworkText: "",
+    homeworkLinkText: "",
+    fixedTime: "Tuesday (10:00AM to 11:00AM) and Thursday (10:00AM to 11:00AM)",
+    rescheduledClass: "No rescheduled class",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 6th",
+    birthday: "1985-12-20" // Example birthday date, replace with actual birthday
+  },
+  {
+    name: "Sarah Gomes Da Trindade",  //SARAH 4
+    number: "-",
+    paymentStatus: "Not Paid",
+    homeworkText: "",
+    homeworkLinkText: "",
+    fixedTime: "Monday (8:30PM to 9:30PM) and Thursday (8:30PM to 9:30PM)",
+    rescheduledClass: "No rescheduled class",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
+    birthday: "1988-12-26" // Example birthday date, replace with actual birthday
+  },
+  {
+    name: "Rute dos Santos Silva", //RUTE 5
+    number: "-",
+    paymentStatus: "Paid",
+    homeworkText: "",
+    homeworkLinkText: "",
+    fixedTime: "Wednesday (8:30PM to 9:30PM) and Saturday (1:00PM to 2:00PM)",
+    rescheduledClass: "No rescheduled class",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 30th",
+    birthday: "1985-12-20" // Example birthday date, replace with actual birthday
+  },
+  {
+    name: "Letícia Rocha Souza",  //LETICIA 6
+    number: "-",
+    paymentStatus: "Not Paid",
+    homeworkText: "",
+    homeworkLinkText: "",
+    fixedTime: "Tuesday (7:30PM to 8:30PM) and Wednesday (7:30PM to 8:30PM)",
+    rescheduledClass: "No rescheduled class",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
+    birthday: "1985-12-20" // Example birthday date, replace with actual birthday
   },
   // Add more student objects here as needed
 ];
+
+
+
+
+// DO NOT ALTER ANYTHING BELOW HERE! ONLY CHANGE/ADD STUDENTS INFO
+
+
+
+
+
 
 // Handle form submission
 const searchForm = document.getElementById('searchForm');
