@@ -17,6 +17,14 @@ header {
   min-height: 15vh;
 }
 
+.main-2 {
+  flex: 1;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 main {
   flex: 1;
   padding: 25px;
@@ -39,7 +47,7 @@ form {
 
 label {
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
   font-size: 1rem;
   border-radius: 30px;
   margin-top: 10px;
@@ -60,10 +68,10 @@ input[type="text"] {
 button {
   padding: 5px 15px;
   margin-top: 2px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color:#000000;
   border-radius: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -106,23 +114,22 @@ footer {
 }
 
 h1 {
-  font-family: 'Geologica', sans-serif;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
   font-size: 2.2rem;
   margin-top: auto;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
   color:#000000;
   padding: 2px;
   font-weight: bold;
 }
 
 h2 {
-  font-family: 'Geologica', sans-serif;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
   font-size: 1.3rem;
   margin-top: 0px;
   margin-bottom: 20px;
   color:#000000;
   padding: 5px;
-  font-weight: bold;
 }
 
 h4 {
@@ -140,7 +147,7 @@ h4 {
 h5 {
   text-align: center;
   color:#000000;
-  font-family: 'Geologica', sans-serif;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
   font-size: 0.8em;
   font-weight: bold;
   margin-top: 4px;
@@ -170,12 +177,12 @@ h5 {
 
 .rescheduled {
   color: red;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 0.8s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   0% {
-    text-shadow: 0 0 5px red;
+    text-shadow: 0 0 11px red;
   }
   100% {
     text-shadow: 0 0 10px red;
@@ -198,7 +205,7 @@ h5 {
   color: black;
   font-size: 0.9rem; /* Adjust the font size to make the menu smaller */
   line-height: 30px; /* Adjust the line height to make the menu smaller */
-  height: 30px; /* Adjust the height to make the menu smaller */
+  height: auto; /* Adjust the height to make the menu smaller */
   border-radius: 30px;
 }
 
@@ -214,9 +221,8 @@ h5 {
 .nav a:hover {
   background-color: rgba(0, 0, 0);
   color: white;
+  padding: 5px;
   border-radius: 20px;
-  margin-left: 2px;
-  margin-right: 2px;
 }
 
 .nav a.active {
@@ -275,13 +281,14 @@ h5 {
 /* Coming soon */
 
 #coming-soon-img {
-  height: 200px;
+  height: 140px;
   width: auto;
 }
 
 #whatsapp-img {
   height: 40px;
   width: auto;
+  border-radius: 5px;
 }
 
 /* <em> makes the text italic and red */
@@ -293,4 +300,96 @@ em {
 /* <sub> makes the text grey and italic */
 sub {
   color: rgb(88, 88, 88);
+}
+
+/* the "trouble connecting" text-link */
+
+.link-stuff {
+  color: #6e96d5;
+  font-family: 'SfProRegular', sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.link-stuff:hover {
+  text-decoration: underline;
+  color: #4129ca;;
+}
+
+/* the end of the "trouble connectig" text-link */
+
+.glow-button {
+  display: inline-block;
+  padding: 5px;
+  height: 40px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0); /* Set initial box shadow with no glow effect */
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 15px rgba(23, 184, 68, 0.87);
+  background-color: #ffffff; /* Customize the color and intensity of the glow effect when hovered */
+}
+
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.video-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  max-width: auto;
+  max-height: 40vh;
+}
+
+.video-container video {
+  max-width: 50%;
+  border-radius: 20px;
+  max-height: 75%;
+  object-fit: contain;
+}
+
+#closeVideoButton {
+  position: absolute;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  top: -35px;
+  right: -5px;
+}
+
+/* glowing of the what students are saying */
+
+.top-button {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: 5px;
+  animation: glow 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 11px rgb(76, 0, 255);
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(76, 0, 255);
+  }
 }

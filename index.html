@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/fonts/Sf-pro-regular.OTF">
     <link rel="icon" href="./adj-icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="news">
@@ -24,7 +25,22 @@
         <div id="adenilson-img">
          <img src="./public/assets/images/english-w-adenilson.png" draggable="false" alt="Non-draggable image">
         </div>
+
+        <button id="openVideoButton"><a class="top-button">Check out what the students are saying! Click here</a></button>
+        <div id="videoPopup" class="video-popup">
+          <div class="video-container">
+            <video id="videoPlayer" controls>
+              <source src="./public/assets/videos/jooy_fava.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <button id="closeVideoButton">Close</button>
+          </div>
+        </div>
+
     </header>
+
+
+
     <main>
         <h1>Student Portal</h1>
         <section id="home" class="page">
@@ -36,21 +52,28 @@
                     <label for="birthday">Birthday:</label>
                     <input type="date" id="birthday" required>
                   </div>
+                  <a href="https://wa.me/5564992521429?text=Hey!%20I%20can't%20log%20in%20to%20my%20Student%20Portal" class="link-stuff">Trouble connecting?</a><br/>
+                  <br/>
                 <button type="submit">Search</button>
               </form>
               
               <div id="studentInfo">
               </div>
         </section>
-        <div id="caixa-qr-code-container">
-            <img id="caixa-qr-code" src="./public/assets/images/caixa-qr-code.jpg" draggable="false" alt="Non-draggable image">
-            <h4 class="h4">Chave pix: aaadjrbr@gmail.com</h4>
-            <h5><em>Scan the QR code on your bank's application.</em><br />*Make sure to send the receipt on my WhatsApp.</h5>
-            <a href="https://wa.me/5564992521429?text=Hey!%20I%20can't%20log%20in%20to%20my%20Student%20Portal">
-              <img id="whatsapp-img" src="./public/assets/images/WhatsAppButtonWhiteMedium.png" target="_blank">
-            </a>
-          </div>
     </main>
+
+    <div class="main-2">
+      <div id="caixa-qr-code-container">
+        <img id="caixa-qr-code" src="./public/assets/images/caixa-qr-code.jpg" draggable="false" alt="Non-draggable image">
+        <h4 class="h4">Chave pix: aaadjrbr@gmail.com</h4>
+        <h5><em>Scan the QR code using your bank's application.</em><br />*Make sure to send the receipt on my WhatsApp.</h5>
+        <a href="https://wa.me/5564992521429?" class="glow-button">
+          <img id="whatsapp-img" src="./public/assets/images/WhatsAppButtonWhiteMedium.png">
+        </a>
+      </div>
+    </div>
+
+    
     <footer>
         <p>Copyright &copy 2023 English w/ Adenilson All Rights Reserved.</p>
     </footer>
