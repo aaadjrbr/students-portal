@@ -14,7 +14,7 @@ const students = [
     name: "Gabriel Henrique Fernandes Cardoso", //GABRIEL 1
     number: "-",
     paymentStatus: "Paid",
-    homeworkText: "",
+    homeworkText: "No homework",
     homeworkLinkText: "https://docs.google.com/document/d/1gdAEP8Fa8uVtCcOyC5aXj9TyO2-dxtUoj5siSGtRO2g/edit?usp=sharing",
     fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
     rescheduledClass: "No rescheduled class",
