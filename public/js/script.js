@@ -4,14 +4,18 @@ const students = [
     number: "S2345678",
     paymentStatus: "Not Paid",
     homeworkText: "English essay due on 6th July",
-    homeworkLinkText: "View Assignment",
+    homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday and Thursday from 4:00 PM to 5:30 PM",
     rescheduledClass: "Math class on 9th July at 11:00 AM",
     paymentDue: "Payment due on 10th July",
-    birthday: "2001-05-23" // Example birthday date, replace with actual birthday
+    birthday: "2001-05-23",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://example.com/homework/${uniqueId}`;
+    }
   },
   {
-    name: "Gabriel Henrique Fernandes Cardoso", //GABRIEL 1
+    name: "Gabriel Henrique Fernandes Cardoso",
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "No homework",
@@ -19,65 +23,96 @@ const students = [
     fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> July 15th",
-    birthday: "2003-01-20" // Example birthday date, replace with actual birthday
+    birthday: "2003-01-20",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://docs.google.com/document/d/1gdAEP8Fa8uVtCcOyC5aXj9TyO2-dxtUoj5siSGtRO2g/edit?usp=sharing/${uniqueId}`;
+    }
   },
   {
-    name: "Adriano Alvim Rocha", //ADRIANO 2
+    name: "Adriano Alvim Rocha",
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
-    homeworkLinkText: "",
+    homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (7:30PM to 8:30PM) and Thursday (7:30PM to 8:30PM)",
     rescheduledClass: "Rescheduled class on Friday 7th",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 4th",
-    birthday: "1995-07-29" // Example birthday date, replace with actual birthday
+    birthday: "1995-07-29",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://example.com/homework/${uniqueId}`;
+    }
   },
   {
-    name: "Thiago Monteiro da Rocha", //THIAGO 3
+    name: "Thiago Monteiro da Rocha",
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
-    homeworkLinkText: "",
+    homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday (10:00AM to 11:00AM) and Thursday (10:00AM to 11:00AM)",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 6th",
-    birthday: "1985-12-20" // Example birthday date, replace with actual birthday
+    birthday: "1985-12-20",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://example.com/homework/${uniqueId}`;
+    }
   },
   {
-    name: "Sarah Gomes Da Trindade",  //SARAH 4
+    name: "Sarah Gomes Da Trindade",
     number: "-",
     paymentStatus: "Not Paid",
     homeworkText: "",
-    homeworkLinkText: "",
+    homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (8:30PM to 9:30PM) and Thursday (8:30PM to 9:30PM)",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
-    birthday: "1988-12-26" // Example birthday date, replace with actual birthday
+    birthday: "1988-12-26",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://example.com/homework/${uniqueId}`;
+    }
   },
   {
-    name: "Rute dos Santos Silva", //RUTE 5
+    name: "Rute dos Santos Silva",
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
-    homeworkLinkText: "",
+    homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (8:30PM to 9:30PM) and Saturday (1:00PM to 2:00PM)",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 30th",
-    birthday: "1999-08-30" // Example birthday date, replace with actual birthday
+    birthday: "1999-08-30",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://example.com/homework/${uniqueId}`;
+    }
   },
   {
-    name: "Letícia Rocha Souza",  //LETICIA 6
+    name: "Letícia Rocha Souza",
     number: "-",
     paymentStatus: "Not Paid",
     homeworkText: "",
-    homeworkLinkText: "",
+    homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday (7:30PM to 8:30PM) and Wednesday (7:30PM to 8:30PM)",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
-    birthday: "1998-06-24" // Example birthday date, replace with actual birthday
-  },
+    birthday: "1998-06-24",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://example.com/homework/${uniqueId}`;
+    }
+  }
   // Add more student objects here as needed
 ];
+
+
+
+
+
+
+
 
 
 
@@ -124,15 +159,15 @@ searchForm.addEventListener('submit', e => {
         }
 
         studentInfo.innerHTML += `
-          <h3>${student.name}</h3>
-          <p><strong>Number:</strong> ${student.number}</p>
-          <p><strong>Payment Status:</strong> <span style="color: ${textColor}">${student.paymentStatus}</span></p>
-          <p><strong>Homework:</strong> ${student.homeworkText} <a href="${getHomeworkLink(student)}">${student.homeworkLinkText}</a></p>
-          <p><strong>Fixed Time:</strong> ${student.fixedTime}</p>
-          <p class="${hasRescheduledClass ? 'rescheduled' : ''}"><strong>Rescheduled Class:</strong> ${student.rescheduledClass}</p>
-          <p><strong>Payment Due:</strong> ${student.paymentDue}</p>
-          <hr>
-        `;
+        <h3>${student.name}</h3>
+        <p><strong>Number:</strong> ${student.number}</p>
+        <p><strong>Payment Status:</strong> <span style="color: ${textColor}">${student.paymentStatus}</span></p>
+        <p><strong>Homework:</strong> ${student.homeworkText} <a href="${student.getHomeworkLink()}">${student.homeworkLinkText}</a></p>
+        <p><strong>Fixed Time:</strong> ${student.fixedTime}</p>
+        <p class="${hasRescheduledClass ? 'rescheduled' : ''}"><strong>Rescheduled Class:</strong> ${student.rescheduledClass}</p>
+        <p><strong>Payment Due:</strong> ${student.paymentDue}</p>
+        <hr>
+      `;
       });
 
       // Show the hidden content
