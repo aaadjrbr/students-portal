@@ -15,7 +15,7 @@ const students = [
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "No homework",
-    homeworkLinkText: "https://docs.google.com/document/d/1gdAEP8Fa8uVtCcOyC5aXj9TyO2-dxtUoj5siSGtRO2g/edit?usp=sharing",
+    homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> July 15th",
@@ -166,7 +166,7 @@ function hidePage(pageId) {
 function getHomeworkLink(student) {
   // Here, you can dynamically generate the link based on the student's information.
   // For demonstration purposes, we'll simply return a placeholder link.
-  return `https://example.com/homework/${student.number}`;
+  return `https://drive.google.com/drive/folders/1mgXA-rEcf_DvxGtxnGn30lnCc8kbrWpQ?usp=sharing/${student.number}`;
 }
 
 // Handle menu item clicks
