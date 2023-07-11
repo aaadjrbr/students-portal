@@ -105,7 +105,7 @@ const students = [
     }
   },
   {
-    name: "Carol Assis Rodrigues",
+    name: "Carolina Assis Rodrigues",
     number: "S2345678",
     paymentStatus: "Not Paid",
     homeworkText: "English essay due on 6th July",
