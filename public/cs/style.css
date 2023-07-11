@@ -415,3 +415,9 @@ sub {
     text-shadow: 0 0 15px rgb(76, 0, 255);
   }
 }
+
+#flag-img {
+  height: 20px;
+  width: auto;
+  border-radius: 2px;
+}

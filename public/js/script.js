@@ -15,7 +15,7 @@ const students = [
     }
   },
   {
-    name: "Gabriel Henrique Fernandes Cardoso",
+    name: "Gabriel Henrique Fernandes Cardoso", //GABRIEL 1
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "No homework",
@@ -30,13 +30,13 @@ const students = [
     }
   },
   {
-    name: "Adriano Alvim Rocha",
+    name: "Adriano Alvim Rocha", //ADRIANO 2
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (7:30PM to 8:30PM) and Thursday (7:30PM to 8:30PM)",
-    rescheduledClass: "Rescheduled class on Friday 7th",
+    rescheduledClass: "Rescheduled class on Friday 14th",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 4th",
     birthday: "1995-07-29",
     getHomeworkLink: function() {
@@ -45,7 +45,7 @@ const students = [
     }
   },
   {
-    name: "Thiago Monteiro da Rocha",
+    name: "Thiago Monteiro da Rocha", //THIAGO 3
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
@@ -60,7 +60,7 @@ const students = [
     }
   },
   {
-    name: "Sarah Gomes Da Trindade",
+    name: "Sarah Gomes Da Trindade", //SARAH 4
     number: "-",
     paymentStatus: "Not Paid",
     homeworkText: "",
@@ -75,7 +75,7 @@ const students = [
     }
   },
   {
-    name: "Rute dos Santos Silva",
+    name: "Rute dos Santos Silva", //RUTE 5
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
@@ -90,7 +90,7 @@ const students = [
     }
   },
   {
-    name: "Letícia Rocha Souza",
+    name: "Letícia Rocha Souza", //LETICIA 6
     number: "-",
     paymentStatus: "Not Paid",
     homeworkText: "",
