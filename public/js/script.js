@@ -11,7 +11,7 @@ const students = [
     birthday: "2001-05-23",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
-      return `https://example.com/homework/${uniqueId}`;
+      return `https://docs.google.com/document/d/1RRokwPUd4n9Iw4vRKb7b8K6duU7tueVQQ1UWdyoWh7M/edit?usp=sharing/${uniqueId}`;
     }
   },
   {
@@ -41,11 +41,11 @@ const students = [
     birthday: "1995-07-29",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
-      return `https://example.com/homework/${uniqueId}`;
+      return `https://docs.google.com/document/d/1TgTg1YSVI5WsDfEyYhZIlX_GkY2BDP-je-qhBClsl_I/edit?usp=sharing/${uniqueId}`;
     }
   },
   {
-    name: "Thiago Monteiro da Rocha", //THIAGO 3
+    name: "Thiago Monteiro Da Rocha", //THIAGO 3
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
@@ -56,7 +56,7 @@ const students = [
     birthday: "1985-12-20",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
-      return `https://example.com/homework/${uniqueId}`;
+      return `https://docs.google.com/document/d/1DMcfWsPf3lPwhwHFIcWGyuHUgvV5eCh1DHte8Zm306M/edit?usp=sharing/${uniqueId}`;
     }
   },
   {
@@ -71,11 +71,11 @@ const students = [
     birthday: "1988-12-26",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
-      return `https://example.com/homework/${uniqueId}`;
+      return `https://docs.google.com/document/d/1H4pdBuKpDwBZNKeGEIpbIn3-db2buWlVQkqiZzyioe4/edit?usp=sharing/${uniqueId}`;
     }
   },
   {
-    name: "Rute dos Santos Silva", //RUTE 5
+    name: "Rute Dos Santos Silva", //RUTE 5
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
@@ -86,7 +86,7 @@ const students = [
     birthday: "1999-08-30",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
-      return `https://example.com/homework/${uniqueId}`;
+      return `https://docs.google.com/document/d/1gl8yLqV5QoniugOExEF9nW3WEnJGtXJEZ54rKyaA7uk/edit?usp=sharing/${uniqueId}`;
     }
   },
   {
@@ -101,7 +101,22 @@ const students = [
     birthday: "1998-06-24",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
-      return `https://example.com/homework/${uniqueId}`;
+      return `https://docs.google.com/document/d/1gEf39QGPWeswyXTHvJzyML22sEFEuTJjVc2qBgOBxPE/edit?usp=sharing/${uniqueId}`;
+    }
+  },
+  {
+    name: "Carol Assis Rodrigues",
+    number: "S2345678",
+    paymentStatus: "Not Paid",
+    homeworkText: "English essay due on 6th July",
+    homeworkLinkText: "Stuff we saw in our classes",
+    fixedTime: "Tuesday and Thursday from 4:00 PM to 5:30 PM",
+    rescheduledClass: "Math class on 9th July at 11:00 AM",
+    paymentDue: "Payment due on 10th July",
+    birthday: "1997-04-08",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://docs.google.com/document/d/14qm-1WXYKBOlNUz4s0cF4NlFuitK9j5gzl5L_rnrNEU/edit?usp=sharing/${uniqueId}`;
     }
   }
   // Add more student objects here as needed
