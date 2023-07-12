@@ -62,7 +62,7 @@ const students = [
   {
     name: "Sarah Gomes Da Trindade", //SARAH 4
     number: "-",
-    paymentStatus: "Not Paid",
+    paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (8:30PM to 9:30PM) and Thursday (8:30PM to 9:30PM)",
@@ -92,7 +92,7 @@ const students = [
   {
     name: "Letícia Rocha Souza", //LETICIA 6
     number: "-",
-    paymentStatus: "Not Paid",
+    paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday (7:30PM to 8:30PM) and Wednesday (7:30PM to 8:30PM)",
