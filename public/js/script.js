@@ -22,7 +22,7 @@ const students = [
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
     rescheduledClass: "Asked to reschedule the Wednesday Class (July 12th) [1 Pending Class]",
-    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> July 15th",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong>-",
     birthday: "2003-01-20",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
@@ -36,7 +36,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (7:30PM to 8:30PM) and Thursday (7:30PM to 8:30PM)",
-    rescheduledClass: "Rescheduled class on Friday 14th",
+    rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 4th",
     birthday: "1995-07-29",
     getHomeworkLink: function() {
@@ -51,7 +51,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday (10:00AM to 11:00AM) and Thursday (10:00AM to 11:00AM)",
-    rescheduledClass: "Rescheduled Class, Friday 14th - 10:00AM",
+    rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 6th",
     birthday: "1985-12-20",
     getHomeworkLink: function() {
@@ -81,7 +81,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (8:30PM to 9:30PM) and Saturday (1:00PM to 2:00PM)",
-    rescheduledClass: "July, Thursday 13th - 6:30PM",
+    rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 30th",
     birthday: "1999-08-30",
     getHomeworkLink: function() {
@@ -96,7 +96,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday (7:30PM to 8:30PM) and Wednesday (7:30PM to 8:30PM)",
-    rescheduledClass: "July, Friday 14th - 2:00PM",
+    rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "1998-06-24",
     getHomeworkLink: function() {
@@ -111,7 +111,7 @@ const students = [
     homeworkText: "English essay due on 6th July",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday and Thursday from 4:00 PM to 5:30 PM",
-    rescheduledClass: "Math class on 9th July at 11:00 AM",
+    rescheduledClass: "No rescheduled class",
     paymentDue: "Payment due on 10th July",
     birthday: "1997-04-08",
     getHomeworkLink: function() {
