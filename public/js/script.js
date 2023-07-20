@@ -1,6 +1,6 @@
 const students = [
   {
-    name: "Jane Smith",
+    name: "Jane Smith (Example Student)",  //STUDENT EXAMPLE
     number: "S2345678",
     paymentStatus: "Not Paid",
     homeworkText: "English essay due on 6th July",
@@ -66,7 +66,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (8:30PM to 9:30PM) and Thursday (8:30PM to 9:30PM)",
-    rescheduledClass: "No rescheduled class",
+    rescheduledClass: "Asked to reschedule the Thursday Class (July 20th) [1 Pending Class]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "1988-12-26",
     getHomeworkLink: function() {
