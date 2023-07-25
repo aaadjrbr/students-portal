@@ -434,33 +434,27 @@ sub {
   border-radius: 2px;
 }
 
-/* Cookie alert styles */
-.cookie-alert {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #f0f0f0;
-  text-align: center;
-}
-
-.cookie-alert p {
+/* Style the download link as a button */
+.download-button {
   display: inline-block;
-  margin: 0;
-}
-
-.cookie-accept,
-.cookie-decline {
-  margin: 5px;
-  padding: 5px 10px;
-  font-size: 0.8em;
-  border: none;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  margin-top: -15px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
   background-color: #000000;
-  color: #fff;
-  cursor: pointer;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
 }
 
-.cookie-decline {
-  background-color: #ccc;
+/* Optional: Add hover effect */
+.download-button:hover {
+  color: black;
+  font-family: 'Konkhmer Sleokchher', sans-serif;
+  background-color: #ffffff;
 }
+
+/* Optional: Add more styling to make it visually appealing */
+/* For example, you can add margins and adjust the button size */
