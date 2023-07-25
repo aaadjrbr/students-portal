@@ -113,6 +113,11 @@ footer {
   margin-bottom: 10px;
 }
 
+p {
+  font-family: 'SfProRegular', sans-serif;
+  font-size: 1em;
+}
+
 h1 {
   font-family: 'Konkhmer Sleokchher', sans-serif;
   font-size: 2.2rem;
@@ -131,6 +136,16 @@ h2 {
   color:#000000;
   padding: 5px;
 }
+
+h3 {
+  color:#000000;
+  font-family: 'Geologica', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}  
 
 h4 {
   text-align: center;
@@ -326,7 +341,7 @@ sub {
 
 .link-stuff:hover {
   text-decoration: underline;
-  color: #4129ca;;
+  color: #4129ca;
 }
 
 /* the end of the "trouble connectig" text-link */
@@ -417,4 +432,35 @@ sub {
   height: 20px;
   width: auto;
   border-radius: 2px;
+}
+
+/* Cookie alert styles */
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.cookie-alert p {
+  display: inline-block;
+  margin: 0;
+}
+
+.cookie-accept,
+.cookie-decline {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cookie-decline {
+  background-color: #ccc;
 }
