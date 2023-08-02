@@ -21,7 +21,7 @@ const students = [
     homeworkText: "No homework",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
-    rescheduledClass: "Asked to reschedule the Wednesday Class (July 12th) | Friday Class rescheduled (July 21st) [2 Pending Class]",
+    rescheduledClass: "4 Pending Classes",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong>-",
     birthday: "2003-01-20",
     getHomeworkLink: function() {
@@ -118,7 +118,24 @@ const students = [
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
       return `https://docs.google.com/document/d/14qm-1WXYKBOlNUz4s0cF4NlFuitK9j5gzl5L_rnrNEU/edit?usp=sharing/${uniqueId}`;
     }
+  },
+  {
+    name: "Tawanny Reis Marques",
+    number: "-",
+    paymentStatus: "Paid",
+    homeworkText: "No homework",
+    homeworkLinkText: "Stuff we saw in our classes",
+    fixedTime: "Wednesday and Thursday from 4:00 to 5:00PM",
+    rescheduledClass: "No rescheduled class",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
+    birthday: "1997-04-08",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://docs.google.com/document/d/1kmphz-JFB6cVrbWBoulORLBuUlOy22HeyteGXDTbMgA/edit?usp=sharing/${uniqueId}`;
+    }
   }
+
+  
   // Add more student objects here as needed
 ];
 
