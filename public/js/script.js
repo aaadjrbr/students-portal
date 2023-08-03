@@ -128,7 +128,7 @@ const students = [
     fixedTime: "Wednesday and Thursday from 4:00 to 5:00PM",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
-    birthday: "1997-04-08",
+    birthday: "2007-02-08",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
       return `https://docs.google.com/document/d/1kmphz-JFB6cVrbWBoulORLBuUlOy22HeyteGXDTbMgA/edit?usp=sharing/${uniqueId}`;
