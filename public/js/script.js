@@ -21,7 +21,7 @@ const students = [
     homeworkText: "No homework",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
-    rescheduledClass: "4 Pending Classes",
+    rescheduledClass: "Next class on Saturday 19th at 2:00PM [4 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong>-",
     birthday: "2003-01-20",
     getHomeworkLink: function() {
@@ -62,7 +62,7 @@ const students = [
   {
     name: "Sarah Gomes Da Trindade", //SARAH 4
     number: "-",
-    paymentStatus: "Paid",
+    paymentStatus: "Not Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (8:30PM to 9:30PM) and Thursday (8:30PM to 9:30PM)",
