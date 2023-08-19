@@ -18,10 +18,10 @@ const students = [
     name: "Gabriel Henrique Fernandes Cardoso", //GABRIEL 1
     number: "-",
     paymentStatus: "Paid",
-    homeworkText: "No homework",
+    homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
-    rescheduledClass: "Next class on Saturday 19th at 2:00PM [4 Pending Classes]",
+    rescheduledClass: "[4 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong>-",
     birthday: "2003-01-20",
     getHomeworkLink: function() {
@@ -36,7 +36,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (7:30PM to 8:30PM) and Thursday (7:30PM to 8:30PM)",
-    rescheduledClass: "Tuesday 25th (6:00PM to 7:00PM)",
+    rescheduledClass: "[4 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 4th",
     birthday: "1995-07-29",
     getHomeworkLink: function() {
@@ -51,7 +51,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday (10:00AM to 11:00AM) and Thursday (10:00AM to 11:00AM)",
-    rescheduledClass: "No rescheduled class",
+    rescheduledClass: "Monday 21st at 10:00",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 6th",
     birthday: "1985-12-20",
     getHomeworkLink: function() {
@@ -62,11 +62,11 @@ const students = [
   {
     name: "Sarah Gomes Da Trindade", //SARAH 4
     number: "-",
-    paymentStatus: "Not Paid",
+    paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (8:30PM to 9:30PM) and Thursday (8:30PM to 9:30PM)",
-    rescheduledClass: "Asked to reschedule the Thursday Class (July 20th) [1 Pending Class](Next Class: Tuesday 25th → 8:30PM)",
+    rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "1988-12-26",
     getHomeworkLink: function() {
@@ -96,7 +96,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Tuesday (7:30PM to 8:30PM) and Wednesday (7:30PM to 8:30PM)",
-    rescheduledClass: "No rescheduled class",
+    rescheduledClass: "[1 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "1998-06-24",
     getHomeworkLink: function() {
@@ -120,10 +120,10 @@ const students = [
     }
   },
   {
-    name: "Tawanny Reis Marques",
+    name: "Tawanny Reis Marques", //TAWANNY 7
     number: "-",
     paymentStatus: "Paid",
-    homeworkText: "No homework",
+    homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday and Thursday from 4:00 to 5:00PM",
     rescheduledClass: "No rescheduled class",
