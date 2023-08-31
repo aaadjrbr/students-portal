@@ -13,6 +13,41 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" rel="stylesheet">
+
+
+      <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
+        }
+
+        .centered-blockquote {
+            
+            border: 0;
+            border-radius: 3px; /* Rounded borders */
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+            max-width: 450px;
+            min-width: 326px;
+            padding: 0;
+            width: 99.375%;
+            width: -webkit-calc(100% - 2px);
+            width: calc(100% - 2px);
+            text-align: center; /* Align the content inside the blockquote */
+        }
+
+        /* Additional styling for the content inside the blockquote */
+        .centered-blockquote div,
+        .centered-blockquote a,
+        .centered-blockquote p {
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+
+
 </head>
 <body class="news">
     <header>
@@ -22,9 +57,9 @@
               <li class="rescources"><a href="./public/resources.html">Resources</a></li>
             </ul>
           </div>
-          <a href="https://adenilsonribeiro.com" id="adenilson-img">
-            <img src="./public/assets/images/english-w-adenilson.png" draggable="false" alt="Non-draggable image">
-          </a>
+        <div id="adenilson-img">
+         <img src="./public/assets/images/english-w-adenilson.png" draggable="false" alt="Non-draggable image">
+        </div>
 
         <button id="openVideoButton"><a class="top-button">Check out what the students are saying! Click here</a></button>
         <div id="videoPopup" class="video-popup">
@@ -76,6 +111,16 @@
           <img id="whatsapp-img" src="./public/assets/images/WhatsAppButtonWhiteMedium.png">
         </a>
       </div>
+
+    
+    <div class="container">
+        <blockquote class="instagram-media centered-blockquote" data-instgrm-permalink="https://www.instagram.com/p/CwnMn_yOxM_/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+            <!-- Your Instagram content here -->
+        </blockquote>
+    </div>
+    <script async src="//www.instagram.com/embed.js"></script>
+
+
     </div>
     
     <footer>
