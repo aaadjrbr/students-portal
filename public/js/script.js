@@ -21,7 +21,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
-    rescheduledClass: "[4 Pending Classes] - Rescheduled for 9/2/23 at 2PM ",
+    rescheduledClass: "[4 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong>-",
     birthday: "2003-01-20",
     getHomeworkLink: function() {
@@ -36,7 +36,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (7:30PM to 8:30PM) and Thursday (7:30PM to 8:30PM)",
-    rescheduledClass: "[5 Pending Classes]",
+    rescheduledClass: "[5 Pending Classes] +1 Peding class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 4th",
     birthday: "1995-07-29",
     getHomeworkLink: function() {
@@ -81,7 +81,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (8:30PM to 9:30PM) and Saturday (1:00PM to 2:00PM)",
-    rescheduledClass: "[1 Pending Classes]",
+    rescheduledClass: "Wednesday 6th at 7:30PM",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 30th",
     birthday: "1999-08-30",
     getHomeworkLink: function() {
