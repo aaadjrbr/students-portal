@@ -105,9 +105,9 @@ const students = [
     }
   },
   {
-    name: "Jean Carlo Pimenta Roque Tomaz",
+    name: "Jean Carlo Pimenta Roque Tomaz", //JEAN 7
     number: "-",
-    paymentStatus: "Not Paid",
+    paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (6:00PM to 7:00PM) and Wednesday (7:00PM to 8:00PM)",
@@ -120,7 +120,7 @@ const students = [
     }
   },
   {
-    name: "Tawanny Reis Marques", //TAWANNY 7
+    name: "Tawanny Reis Marques", //TAWANNY 8
     number: "-",
     paymentStatus: "Paid",
     homeworkText: "",
