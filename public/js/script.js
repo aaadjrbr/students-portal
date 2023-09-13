@@ -36,7 +36,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (7:30PM to 8:30PM) and Thursday (7:30PM to 8:30PM)",
-    rescheduledClass: "[5 Pending Classes] +1 Peding class",
+    rescheduledClass: "[9 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 4th",
     birthday: "1995-07-29",
     getHomeworkLink: function() {
@@ -95,7 +95,7 @@ const students = [
     paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
-    fixedTime: "Tuesday (7:30PM to 8:30PM) and Wednesday (7:30PM to 8:30PM)",
+    fixedTime: "Tuesday (7:30PM to 8:30PM) and Thursday (6:30PM to 7:30PM)",
     rescheduledClass: "[1 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "1998-06-24",
@@ -105,18 +105,18 @@ const students = [
     }
   },
   {
-    name: "Carolina Assis Rodrigues",
-    number: "S2345678",
+    name: "Jean Carlo Pimenta Roque Tomaz",
+    number: "-",
     paymentStatus: "Not Paid",
-    homeworkText: "English essay due on 6th July",
+    homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
-    fixedTime: "Tuesday and Thursday from 4:00 PM to 5:30 PM",
+    fixedTime: "Monday (6:00PM to 7:00PM) and Wednesday (7:00PM to 8:00PM)",
     rescheduledClass: "No rescheduled class",
-    paymentDue: "Payment due on 10th July",
-    birthday: "1997-04-08",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
+    birthday: "1995-01-08",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
-      return `https://docs.google.com/document/d/14qm-1WXYKBOlNUz4s0cF4NlFuitK9j5gzl5L_rnrNEU/edit?usp=sharing/${uniqueId}`;
+      return `https://docs.google.com/document/d/18rog8zvUrx9cyaefaTRZy6VUeLY_kXVYeHINMzXa8Is/edit?usp=sharing/${uniqueId}`;
     }
   },
   {
@@ -125,7 +125,7 @@ const students = [
     paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
-    fixedTime: "Wednesday and Thursday from 4:00 to 5:00PM",
+    fixedTime: "Wednesday (from 4:00 to 5:00PM)",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "2007-02-08",
