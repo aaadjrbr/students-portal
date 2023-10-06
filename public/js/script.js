@@ -20,8 +20,8 @@ const students = [
     paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
-    fixedTime: "Wednesday (6:00PM to 7:00PM) and Friday (5:00PM to 6:00PM)",
-    rescheduledClass: "[5 Pending Classes]",
+    fixedTime: "Wednesday (6:00PM to 7:00PM)",
+    rescheduledClass: "[7 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong>-",
     birthday: "2003-01-20",
     getHomeworkLink: function() {
@@ -36,7 +36,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (7:30PM to 8:30PM) and Thursday (7:30PM to 8:30PM)",
-    rescheduledClass: "[10 Pending Classes] + 1",
+    rescheduledClass: "[9 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 4th",
     birthday: "1995-07-29",
     getHomeworkLink: function() {
@@ -81,7 +81,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (8:30PM to 9:30PM) and Saturday (1:00PM to 2:00PM)",
-    rescheduledClass: "1 pending class",
+    rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 30th",
     birthday: "1999-08-30",
     getHomeworkLink: function() {
@@ -95,8 +95,8 @@ const students = [
     paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
-    fixedTime: "Tuesday (7:30PM to 8:30PM) and Thursday (6:30PM to 7:30PM)",
-    rescheduledClass: "[3 Pending Classes]",
+    fixedTime: "Saturday (9:30AM to 10:30PM)",
+    rescheduledClass: "[2 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "1998-06-24",
     getHomeworkLink: function() {
@@ -111,7 +111,7 @@ const students = [
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Monday (6:00PM to 7:00PM) and Wednesday (7:00PM to 8:00PM)",
-    rescheduledClass: "No rescheduled class",
+    rescheduledClass: "[1 Pending Class]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "1995-01-08",
     getHomeworkLink: function() {
