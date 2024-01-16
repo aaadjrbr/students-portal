@@ -95,7 +95,7 @@ const students = [
     paymentStatus: "Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
-    fixedTime: "Saturday (9:30AM to 10:30PM)",
+    fixedTime: "Saturday (10:00AM to 12:00PM)",
     rescheduledClass: "[2 Pending Classes]",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "1998-06-24",
@@ -132,6 +132,21 @@ const students = [
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
       return `https://docs.google.com/document/d/1kmphz-JFB6cVrbWBoulORLBuUlOy22HeyteGXDTbMgA/edit?usp=sharing/${uniqueId}`;
+    }
+  },
+  {
+    name: "João Pedro Alves da Silva", //JOAO PEDRO 9
+    number: "-",
+    paymentStatus: "Paid",
+    homeworkText: "",
+    homeworkLinkText: "Stuff we saw in our classes",
+    fixedTime: "Monday (9:00PM to 10:00PM) and Friday (19:00PM to 8:00PM)",
+    rescheduledClass: "No rescheduled class",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
+    birthday: "2001-05-10",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://docs.google.com/document/d/1inCD-PwwnoFo2bCst7TWNmucpL52lxpgiAHLJ09l-v4/edit?usp=sharing/${uniqueId}`;
     }
   }
 
