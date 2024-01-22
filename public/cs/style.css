@@ -25,6 +25,14 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.main-3 {
+  flex: 1;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 main {
   flex: 1;
   padding: 25px;
