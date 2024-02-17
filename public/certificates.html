@@ -30,9 +30,11 @@
         }
 
         #popupImage {
-        max-width: 500px;
-        max-height: 500px;
-        border-radius: 5px;
+          max-width: 100%; /* Ensures the image doesn't exceed the width of the popup */
+          max-height: 80vh; /* Sets maximum height to 80% of the viewport height */
+          display: block; /* Ensures the image is displayed as a block element */
+          margin: 0 auto; /* Centers the image horizontally */
+          border-radius: 5px;
         }
 
         .close {
@@ -78,7 +80,7 @@
 <header>
     <div class="nav">
         <ul>
-          <li class="home"><a class="active" href="../index.html">Início</a></li>
+          <li class="home"><a class="active" href="../index.html">Go back</a></li>
         </ul>
     </div>
     <div id="adenilson-img">
@@ -88,18 +90,18 @@
 
 <main>
     <h1 style="font-size: 1.8em;">I finish all my course/classes:</h1>
-    <h2>*Para alunos brasileiros, nossos certificados serão em  Português. 🇧🇷</h2>
 
     <h2>Claim your certificate:</h2>
     <p>In case you finish all your classes and/or course, please reach us at:</p>
-    <h3>aaadjrbr@gmail.com</h3><br/>
+    <h3>E-mail: aaadjrbr@gmail.com</h3><br/>
     <a href="https://wa.me/5564992521429?" class="glow-button">
         <img id="whatsapp-img" src="../public/assets/images/WhatsAppButtonWhiteMedium.png">
     </a>
 </main>
 
 <div class="main-2">
-    <h2>Here is how your certificate and letter of completion look like:</h2>
+    <h2>Check out what your certificate and completion letter look like below:</h2>
+    <p>*Para alunos brasileiros, nossos certificados serão em  Português. 🇧🇷</p>
     <button id="popupButton">Certificate</button>
 
     <div id="popup">
