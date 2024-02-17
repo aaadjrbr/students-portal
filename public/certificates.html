@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en, pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Certificates - English w/ Adenilson</title>
+    <link rel="stylesheet" href="../public/cs/style.css">
+    <link rel="stylesheet" href="../assets/fonts/Sf-pro-regular.OTF">
+    <link rel="icon" href="../adj-icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        #popup {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          padding: 20px;
+          border: 1px solid #ccc;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          z-index: 9999;
+        }
+
+        #popupImage {
+          max-width: 100%; /* Ensures the image doesn't exceed the width of the popup */
+          max-height: 80vh; /* Sets maximum height to 80% of the viewport height */
+          display: block; /* Ensures the image is displayed as a block element */
+          margin: 0 auto; /* Centers the image horizontally */
+        }
+
+        .close {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        cursor: pointer;
+        font-size: 24px; /* Increase the font size */
+        width: 40px; /* Increase the width */
+        height: 40px; /* Increase the height */
+        line-height: 40px; /* Center vertically */
+        text-align: center; /* Center horizontally */
+        color: #000000; /* Change the color to red */
+        }
+
+
+        #pdfPopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            width: 80%;
+            height: 80%;
+        }
+
+        #pdfViewer {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <ul>
+          <li class="home"><a class="active" href="../index.html">Início</a></li>
+        </ul>
+    </div>
+    <div id="adenilson-img">
+     <img src="../public/assets/images/english-w-adenilson.png" draggable="false" alt="Non-draggable image">
+    </div>
+</header>
+
+<main>
+    <h1 style="font-size: 1.8em;">I finish all my course/classes:</h1>
+    <h2>*Para alunos brasileiros, nossos certificados serão em  Português. 🇧🇷</h2>
+
+    <h2>Claim your certificate:</h2>
+    <p>In case you finish all your classes and/or course, please reach us at:</p>
+    <h3>aaadjrbr@gmail.com</h3><br/>
+    <a href="https://wa.me/5564992521429?" class="glow-button">
+        <img id="whatsapp-img" src="../public/assets/images/WhatsAppButtonWhiteMedium.png">
+    </a>
+</main>
+
+<div class="main-2">
+    <h2>Here is how your certificate and letter of completion look like:</h2>
+    <button id="popupButton">Certificate</button>
+
+    <div id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popupImage" src="./assets/images/certificate-sample.png" alt="Certificate Sample">
+    </div>
+    <br/><br/>
+    <button id="pdfButton">Letter of completion</button>
+
+    <div id="pdfPopup">
+        <span class="close" onclick="closePdfPopup()">&times;</span>
+        <div id="pdfControls">
+        </div>
+        <iframe id="pdfViewer" src="./assets/downloads/Letter of conclusion (Adenilson Certificate) (1).pdf" frameborder="0"></iframe>
+    </div>
+    
+    <br/>
+    
+</div>
+
+<footer>
+    <p>Copyright &copy 2024 English w/ Adenilson. All Rights Reserved.</p>
+    <div>
+        <img id="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/US_flag_large_51_stars.png/800px-US_flag_large_51_stars.png">
+    </div>
+</footer>
+
+
+<script>
+    const popupButton = document.getElementById('popupButton');
+    const popup = document.getElementById('popup');
+
+    popupButton.addEventListener('click', () => {
+        popup.style.display = 'block';
+    });
+
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+
+    const pdfButton = document.getElementById('pdfButton');
+const pdfPopup = document.getElementById('pdfPopup');
+
+pdfButton.addEventListener('click', () => {
+    pdfPopup.style.display = 'block';
+});
+
+function closePdfPopup() {
+    pdfPopup.style.display = 'none';
+}
+
+function zoomIn() {
+    const pdfViewer = document.getElementById('pdfViewer');
+    pdfViewer.contentWindow.postMessage({ zoom: 1.5 }, '*'); // Adjust zoom factor as needed
+}
+
+function zoomOut() {
+    const pdfViewer = document.getElementById('pdfViewer');
+    pdfViewer.contentWindow.postMessage({ zoom: 0.5 }, '*'); // Adjust zoom factor as needed
+}
+
+
+</script>
+
+</body>
+</html>
