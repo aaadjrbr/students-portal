@@ -17,7 +17,7 @@ const students = [
   {
     name: "Gabriel Henrique Fernandes Cardoso", //GABRIEL 1
     number: "-",
-    paymentStatus: "Paid",
+    paymentStatus: "CANCELLED",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (6:00PM to 7:00PM)",
@@ -137,16 +137,31 @@ const students = [
   {
     name: "João Pedro Alves da Silva", //JOAO PEDRO 9
     number: "-",
-    paymentStatus: "Paid",
+    paymentStatus: "Not Paid",
     homeworkText: "",
     homeworkLinkText: "Stuff we saw in our classes",
-    fixedTime: "Monday (9:00PM to 10:00PM) and Friday (19:00PM to 8:00PM)",
+    fixedTime: "Monday (9:00PM to 10:00PM) and Friday (7:00PM to 8:00PM)",
     rescheduledClass: "No rescheduled class",
     paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 10th",
     birthday: "2001-05-10",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
       return `https://docs.google.com/document/d/1inCD-PwwnoFo2bCst7TWNmucpL52lxpgiAHLJ09l-v4/edit?usp=sharing/${uniqueId}`;
+    }
+  },
+  {
+    name: "Gnainna Santana Santos", //GNAINNA 10
+    number: "-",
+    paymentStatus: "Paid",
+    homeworkText: "",
+    homeworkLinkText: "Stuff we saw in our classes",
+    fixedTime: "Wednesday (from 4:30 to 5:30PM) and Saturday (7:30AM to 8:30AM)",
+    rescheduledClass: "No rescheduled class",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 15th",
+    birthday: "1992-01-22",
+    getHomeworkLink: function() {
+      const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
+      return `https://docs.google.com/document/d/1kbeRFECyo9UpdQlT9YibxbOI8c1zmGTOlNN0zvxLcGc/edit?usp=sharing/${uniqueId}`;
     }
   }
 
