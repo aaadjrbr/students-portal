@@ -1,0 +1,184 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../assets/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @font-face {
+    font-family: 'SfProRegular';
+    src: url("../assets/fonts/Sf-pro-regular.ttf") format('truetype');
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 16px;
+    text-align: center;
+    min-height: 15vh;
+  }
+
+  h2 {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0px;
+    color:#000000;
+  }
+
+  p {
+    font-family: 'SfProRegular', sans-serif;
+    font-size: 1em;
+  }
+  
+  .main-2 {
+    flex: 1;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  main {
+    flex: 1;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="date"] {
+    padding: 10px;
+    font-family: 'SfProRegular', sans-serif;
+    color: grey;
+    font-size: 0.9rem;
+    width: auto;
+    border-radius: 10px;
+    border-color: var(--cas-theme-primary, #000000);
+  }
+  
+  button {
+    padding: 5px 15px;
+    margin-top: 2px;
+    font-size: 0.9rem;
+    background-color: #000000;
+    border-radius: 10px;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0);
+    font-family: 'SfProRegular', sans-serif;
+    font-size: 0.8rem;
+    color: #ffffff;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  #flag-img {
+    height: 20px;
+    width: auto;
+    border-radius: 2px;
+  }
+
+  header {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 16px;
+    text-align: center;
+    min-height: 15vh;
+  }
+  
+  .nav ul {
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Align the menu items horizontally to the center */
+  }
+  
+  .nav li {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 0.9rem; /* Adjust the font size to make the menu smaller */
+    line-height: 30px; /* Adjust the line height to make the menu smaller */
+    height: auto; /* Adjust the height to make the menu smaller */
+    border-radius: 30px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px;
+    transition: .3s background-color;
+    border-radius: 20px;
+  }
+  
+  .nav a:hover {
+    background-color: rgba(0, 0, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  
+  .nav a.active {
+    background-color: rgba(255, 255, 255);
+    margin-left: 2px;
+    color: black;
+    border-radius: 20px;
+    cursor: default;
+  }
+  
+  #adenilson-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: auto;
+  }
+  
+  #adenilson-img img {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: contain;
+  }
+  
+  /* the "trouble connecting" text-link */
+
+.link-stuff {
+  color: #6e96d5;
+  font-family: 'SfProRegular', sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.link-stuff:hover {
+  text-decoration: underline;
+  color: #4129ca;
+}
