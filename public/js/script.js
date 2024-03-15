@@ -157,7 +157,7 @@ const students = [
     homeworkLinkText: "Stuff we saw in our classes",
     fixedTime: "Wednesday (from 4:30 to 5:30PM) and Saturday (7:30AM to 8:30AM)",
     rescheduledClass: "No rescheduled class",
-    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 15th",
+    paymentDue: "No payment due<br/><br/><strong>Monthly Payment Date:</strong> 21st",
     birthday: "1992-01-22",
     getHomeworkLink: function() {
       const uniqueId = this.name.toLowerCase().replace(/\s/g, '-') + '-' + this.number;
