@@ -4,123 +4,47 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Pagar com cartão - English w/ Adenilson</title>
-    <meta name="description" content="Learn English, Private lessons, English with Adenilson, ESL, English as a second Language, One-on-one classes, English, EFL">
+    <meta name="description" content="Aprenda inglês, aulas particulares, Inglês com Adenilson, ESL, Inglês como segunda língua, Aulas individuais, Inglês, EFL">
+  
     <link rel="stylesheet" href="./public/cs/style.css">
     <link rel="stylesheet" href="../assets/fonts/Sf-pro-regular.OTF">
     <link rel="icon" href="./adj-icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" rel="stylesheet">
-  <style>
-body {
-    font-family: 'SfProRegular', Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
+    <style>
+        .credit-card-logo {
+          height: 35px;
+          width: auto;
+          margin-bottom: 15px;
+        }
 
-h2 {
-    text-align: center;
-    font-family: 'SfProRegular', Arial, sans-serif;
-}
+        .image-container {
+          text-align: center; /* Centraliza o conteúdo horizontalmente */
+        }
 
-.calculator {
-  width: 80%;
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        input[type="number"] {
+          padding: 10px;
+          font-family: 'SfProRegular', sans-serif;
+          color: grey;
+          font-size: 0.9rem;
+          width: auto;
+          border-radius: 10px;
+          border-color: var(--cas-theme-primary, #000000);
+          margin: 0 auto 10px; /* Center the input horizontally and add bottom margin */
+          display: block; /* Ensure the input occupies full width */
+          text-align: center; /* Align the text content to the center */
+        }
 
-input[type="number"] {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  width: calc(100% - 20px);
-  padding: 10px;
-  background-color: #000000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: auto; /* Centraliza o botão */
-  display: block; /* Faz o botão um elemento de bloco */
-}
-
-button:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border: 2px solid #000000; /* Add border to the button */
-}
-
-p#result {
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-#adenilson-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 140px;
-  width: auto;
-}
-
-#adenilson-img img {
-  max-height: 90%;
-  max-width: 90%;
-  object-fit: contain;
-}
-
-.image-container {
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
-}
-
-.credit-card-logo {
-  height: 35px;
-  width: auto;
-  margin: 0 5px; /* Adiciona algum espaço entre as imagens */
-  margin-bottom: 10px;
-}
-
-#flag-img {
-  height: 20px;
-  width: auto;
-  border-radius: 2px;
-}
-
-.footer2 {
-  font-family: 'Arial', sans-serif;
-  font-size: 0.8rem;
-  margin-top: 40px;
-  color: #ffffff;
-  padding: 10px;
-  text-align: center !important;
-}
-
-@font-face {
-  font-family: 'SfProRegular';
-  src: url("./public/assets/fonts/Sf-pro-regular.ttf") format('truetype');
-}
+        .align-button-center {
+          margin: 0 auto 10px; /* Center the input horizontally and add bottom margin */
+          display: block; /* Ensure the input occupies full width */
+          text-align: center; /* Align the text content to the center */
+        }
 
 
-@media screen and (max-width: 480px) {
-  .calculator {
-    width: 90%;
-    padding: 10px;
-  }
-}
-
-  </style>
+    </style>
+    </style>
 </head>
 <body>
 
@@ -129,34 +53,30 @@ p#result {
         <img src="./public/assets/images/english-w-adenilson.png" draggable="false" alt="Imagem não arrastável">
        </div>
     </main>
+       <h2 style="text-align: center;"><a style="color: #000;" href=index.html>Voltar</a></h2>
 
-       <h2><a style="color: #000;" href=index.html>Voltar</a></h2>
-<div class="calculator">
-    <h2>Calcule o valor que você precisa pagar se usar um cartão de crédito</h2>
+        <div class="main-2">
+    <h2 style="text-align: center;">Calcule o valor que você precisa pagar se usar um cartão de crédito:</h2>
         <div class="image-container">
     <img class="credit-card-logo" src="./public/assets/images/visa.svg" alt="Visa">
     <img class="credit-card-logo" src="./public/assets/images/mastercard.svg" alt="Master Card">
         </div>
 
-    <input type="number" id="originalAmount" placeholder="Digite o valor da sua mensalidade">
+    <input type="number" id="originalAmount" placeholder="Valor da mensalidade">
     <p style="text-align: center;">*Você paga 4.49% de tarifa</p>
-    <button onclick="calculateAmount()">Calcular</button>
+    <button onclick="calculateAmount()" class="align-button-center">Calcular</button>
     <p style="text-align: center;" id="result"></p>
   </div>
-
-
   
+
   
     <footer>
-    <p>Copyright &copy 2024 English w/ Adenilson. All Rights Reserved. <a href="./public/privacy-policy.html" style="color:rgb(255, 255, 255)">Privacy Policy</a></p><br/>
-    <p>🇧🇷 Brazil - CNPJ: 54.102.014/0001-45 - Adenilson Ribeiro de Moura</p>
+    <p>Copyright &copy 2024 English w/ Adenilson. Todos os direitos reservados. <a href="./public/privacy-policy.html" style="color:rgb(255, 255, 255)">Política de Privacidade</a></p><br/>
+    <p>🇧🇷 Brasil - CNPJ: 54.102.014/0001-45 - Adenilson Ribeiro de Moura</p>
         <div>
           <img id="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/US_flag_large_51_stars.png/800px-US_flag_large_51_stars.png">
         </div>
     </footer>
-
-
-
 
   <script>
 function calculateAmount() {
