@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en, pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>Pagar com cartão - English w/ Adenilson</title>
-    <meta name="description" content="Aprenda inglês, aulas particulares, Inglês com Adenilson, ESL, Inglês como segunda língua, Aulas individuais, Inglês, EFL">
-  
+    <title>Pagamento - Cartão de Crédito - English w/ Adenilson</title>
+    <meta name="description" content="Learn English, Private lessons, English with Adenilson, ESL, English as a second Language, One-on-one classes, English, EFL">
     <link rel="stylesheet" href="./public/cs/style.css">
     <link rel="stylesheet" href="../assets/fonts/Sf-pro-regular.OTF">
     <link rel="icon" href="./adj-icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" rel="stylesheet">
-    <style>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2110834991626364"
+     crossorigin="anonymous"></script>
+
+
+      <style>
+       .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
+        }
+
+        .centered-blockquote {
+            
+            border: 0;
+            border-radius: 3px; /* Rounded borders */
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+            max-width: 450px;
+            min-width: 326px;
+            padding: 0;
+            width: 99.375%;
+            width: -webkit-calc(100% - 2px);
+            width: calc(100% - 2px);
+            text-align: center; /* Align the content inside the blockquote */
+        }
+
+        /* Additional styling for the content inside the blockquote */
+        .centered-blockquote div,
+        .centered-blockquote a,
+        .centered-blockquote p {
+            display: inline-block;
+            text-align: center;
+        }
+
         .credit-card-logo {
+          margin-top: 20px;
           height: 35px;
           width: auto;
-          margin-bottom: 15px;
         }
 
         .image-container {
@@ -31,75 +68,84 @@
           width: auto;
           border-radius: 10px;
           border-color: var(--cas-theme-primary, #000000);
-          margin: 0 auto 10px; /* Center the input horizontally and add bottom margin */
-          display: block; /* Ensure the input occupies full width */
-          text-align: center; /* Align the text content to the center */
         }
 
-        .align-button-center {
-          margin: 0 auto 10px; /* Center the input horizontally and add bottom margin */
-          display: block; /* Ensure the input occupies full width */
-          text-align: center; /* Align the text content to the center */
-        }
+    </style>
 
 
-    </style>
-    </style>
 </head>
-<body>
+<body class="news">
+    <header>
+        <div class="nav">
+            <ul>
+              <li class="home"><a href="./index.html">Início</a></li>
+              <li class="rescources"><a class="active" href="./pagamento-cartao.html">Cartão</a></li>
+            </ul>
+          </div>
+        <div id="adenilson-img">
+         <img src="./public/assets/images/english-w-adenilson.png" draggable="false" alt="Non-draggable image">
+        </div>
+
+    </header>
 
     <main>
-    <div id="adenilson-img">
-        <img src="./public/assets/images/english-w-adenilson.png" draggable="false" alt="Imagem não arrastável">
-       </div>
+        <h1 style="font-size: 1.5em !important;">Calcule o valor que você precisa pagar se usar um cartão de crédito:</h1>
+        <section id="home" class="page">
+        <br/>
+
+      <input type="number" id="originalAmount" placeholder="Valor da mensalidade"><br/>
+      <div style="margin-top: 7px;">
+      <a href="https://wa.me/5564992521429?text=Hey!%20I%20can't%20log%20in%20to%20my%20Student%20Portal" class="link-stuff">Mais informações</a><br/>
+      </div>
+      <img class="credit-card-logo" src="./public/assets/images/visa.svg" alt="Visa">
+      <img class="credit-card-logo" src="./public/assets/images/mastercard.svg" alt="Master Card">
+  
+      <p>*Você paga 4.49% de tarifa</p>
+      <button onclick="calculateAmount()" class="align-button-center">Calcular</button>
+      
+      <p style="text-align: center; font-size: 1.2em;" id="result"></p>
+
+      <br/><br/>
+      <p style="text-align: center;">
+        <sub>Ao efetuar o pagamento, você está concordando com nossa <a href="./public/brazilian-students.html">nova política de pagamentos</a>. <br/>By completing the payment, you are agreeing to our <a href="./public/brazilian-students.html">new payment policy</a>.</sub>
+      </p> 
+        </section>
     </main>
-       <h2 style="text-align: center;"><a style="color: #000;" href=index.html>Voltar</a></h2>
 
-        <div class="main-2">
-    <h2 style="text-align: center;">Calcule o valor que você precisa pagar se usar um cartão de crédito:</h2>
-        <div class="image-container">
-    <img class="credit-card-logo" src="./public/assets/images/visa.svg" alt="Visa">
-    <img class="credit-card-logo" src="./public/assets/images/mastercard.svg" alt="Master Card">
-        </div>
+<hr/><br/>
 
-    <input type="number" id="originalAmount" placeholder="Valor da mensalidade">
-    <p style="text-align: center;">*Você paga 4.49% de tarifa</p>
-    <button onclick="calculateAmount()" class="align-button-center">Calcular</button>
-    <p style="text-align: center;" id="result"></p>
-  </div>
-  
-
-  
+    
     <footer>
-    <p>Copyright &copy 2024 English w/ Adenilson. Todos os direitos reservados. <a href="./public/privacy-policy.html" style="color:rgb(255, 255, 255)">Política de Privacidade</a></p><br/>
-    <p>🇧🇷 Brasil - CNPJ: 54.102.014/0001-45 - Adenilson Ribeiro de Moura</p>
-        <div>
-          <img id="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/US_flag_large_51_stars.png/800px-US_flag_large_51_stars.png">
-        </div>
+        <p>Copyright &copy 2024 English w/ Adenilson. All Rights Reserved. <a href="./public/privacy-policy.html" style="color:white">Privacy Policy</a></p><br/>
+        <p>🇧🇷 Brazil - CNPJ: 54.102.014/0001-45 - Adenilson Ribeiro de Moura</p>
+            <div>
+              <img id="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/US_flag_large_51_stars.png/800px-US_flag_large_51_stars.png">
+            </div>
     </footer>
 
-  <script>
-function calculateAmount() {
-  var originalAmount = parseFloat(document.getElementById('originalAmount').value);
-  if (isNaN(originalAmount)) {
-    document.getElementById('result').innerHTML = "Você precisa digitar um valor para calcular";
-    return;
-  }
-  var extraChargePercentage = 4.49 / 100;
-  var extraChargeAmount = originalAmount * extraChargePercentage;
-  var totalAmount = originalAmount + extraChargeAmount;
 
-  var paymentMessage = "Valor total a pagar com 4,49% de taxa extra: R$" + totalAmount.toFixed(2);
-  var paymentLink = '<a href="https://link.mercadopago.com.br/englishwadenilson" target="_blank">Clique aqui para pagar</a>';
-
-  document.getElementById('result').innerHTML = paymentMessage + ". " + paymentLink;
-}
-
-document.getElementById('originalAmount').addEventListener('keypress', function (e) {
-  if (e.key === 'Enter') {
-    calculateAmount();
-  }
-});
-  </script>
+    <script>
+      function calculateAmount() {
+        var originalAmount = parseFloat(document.getElementById('originalAmount').value);
+        if (isNaN(originalAmount)) {
+          document.getElementById('result').innerHTML = "Você precisa digitar um valor para calcular";
+          return;
+        }
+        var extraChargePercentage = 4.49 / 100;
+        var extraChargeAmount = originalAmount * extraChargePercentage;
+        var totalAmount = originalAmount + extraChargeAmount;
+      
+        var paymentMessage = "Valor total a pagar com 4,49% de taxa extra: R$" + totalAmount.toFixed(2);
+        var paymentLink = '<a href="https://link.mercadopago.com.br/englishwadenilson" target="_blank">Clique aqui para pagar</a>';
+      
+        document.getElementById('result').innerHTML = paymentMessage + ". " + paymentLink;
+      }
+      
+      document.getElementById('originalAmount').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          calculateAmount();
+        }
+      });
+        </script>
 </body>
 </html>
