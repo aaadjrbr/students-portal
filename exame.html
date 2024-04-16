@@ -77,12 +77,42 @@
 
 <body>
 
+<header style="display: none;">
+    <div class="nav">
+        <ul>
+            <li class="home"><a href="../index.html">Home</a></li>
+            <li class="rescources"><a href="./resources.html">Resources</a></li>
+            <li class="certificates"><a class="active" href="./certificates.html">Certificates</a></li>
+            <li class="Receipts"><a href="./invoices-receipts.html">Receipts</a></li>
+        </ul>
+    </div>
+    <div id="adenilson-img">
+     <img src="../public/assets/images/english-w-adenilson.png" draggable="false" alt="Non-draggable image">
+    </div>
+</header>
 
-<div class="main-2">
+<main style="display: none;">
+    <h1 style="font-size: 1.8em;">I finished all my courses/classes!</h1>
 
+    <h2>Claim your certificate:</h2>
+    <p>In case you finished all your classes and/or course, please reach us at:</p>
+    <h3>E-mail: aaadjrbr@gmail.com</h3><br/>
+    <a href="https://wa.me/5564992521429?" class="glow-button">
+        <img id="whatsapp-img" src="../public/assets/images/WhatsAppButtonWhiteMedium.png">
+    </a>
+</main>
+
+<div class="main-2" style="display: none;">
+    <h2>Check out what your certificate and completion letter look like below:</h2>
+    <p>*Para alunos brasileiros, nossos certificados serão em  Português. 🇧🇷</p>
+    <button id="popupButton">Certificate</button>
+
+    <div id="popup" style="display: none;">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popupImage" src="./assets/images/certificate-sample.png" alt="Certificate Sample">
     </div>
     <br/><br/>
-    <button id="pdfButton">Exame</button>
+    <button id="pdfButton">exame</button>
 
     <div id="pdfPopup">
         <span class="close" onclick="closePdfPopup()">&times;</span>
@@ -94,6 +124,14 @@
     <br/>
     
 </div>
+
+<footer style="display: none;">
+    <p>Copyright &copy 2024 English w/ Adenilson. All Rights Reserved.</p><br/>
+    <p>🇧🇷 Brazil - CNPJ: 54.102.014/0001-45 - Adenilson Ribeiro de Moura</p>
+    <div>
+        <img id="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/US_flag_large_51_stars.png/800px-US_flag_large_51_stars.png">
+    </div>
+</footer>
 
 
 <script>
